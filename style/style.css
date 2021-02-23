@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/*Reset 시작*/
+* {
+    color: #000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {text-decoration: none;}
+a:link {color: #333;}
+a:visited {color: #333;}
+a:hover {color: #333;}
+a:active {color: #333;}
+ul {
+    list-style: none;
+}
+/*Reset 끝*/
+
+
+/*GuideLine 시작*/
+/*div#wrap {border: 1px solid #000;}*/
+/*nav#gnb  {border: 1px solid #000;}*/
+/*div#left {border: 1px solid #fb0;}*/
+/*div#galleryList {border: 1px solid #08f;}*/
+/*GuideLine 끝*/
+
+
+/*div#wrap 전체영역 시작*/
+div#wrap {
+    width: 1060px;
+    margin: 0 auto;
+
+}
+/*div#wrap 전체영역 끝*/
+
+
+/*header#header 시작*/
+header#header {
+    text-align: center;
+}
+#header>h1 {
+    height: 100px;
+    line-height: 100px;
+}
+nav#gnb {
+    width: 690px;
+    margin: 16px auto;
+}
+
+nav#gnb>#mainMenu>li {
+    float: left;
+}
+nav#gnb li.selected {
+    font-weight: bold;
+}
+nav#gnb>#mainMenu::after {
+    content: "";
+    display: inline-block;
+}
+nav#gnb>#mainMenu>li:not(:last-child)::after {
+    content: "|";
+    width: 50px;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+}
+nav#gnb>#mainMenu>li a{
+    font-size: 12px;
+}
+/*header#header 끝*/
+
+/*main#main 시작*/
+main#main {
+    display: flex;
+    justify-content: space-between;
+    /*서로 왼쪽 끝, 오른쪽 끝으로 붙임, 여백을 가지긴 하나, 왼쪽 끝과 오른쪽 끝에 여백 x*/
+}
+
+/*div#left 시작*/
+div#left {
+    width: 390px;
+}
+/*div#left 끝*/
+
+
+/*div#galleryList 시작*/
+div#galleryList {
+    width: 630px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*서로 자기 공간을 균등하게 가짐 왼쪽 끝, 오른쪽 끝 여백 o*/
+}
+div#galleryList div.galleryArticle {
+    width: 200px;
+    text-align: center;
+/*    border: 1px solid #000;*/
+}
+
+div#galleryList .galleryArticle span.leadTxt {
+    color: #947956;
+    font-size: 13px;
+    font-weight: bold;
+}
+div#galleryList .galleryArticle span.goodsName {
+    font-size: 12px;
+/*    font-weight: bold;*/
+}
+div#galleryList .galleryArticle span.price {
+    color: #148e89;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+}
+div#galleryList .galleryArticle span.price::after {
+    content: " 원";
+    font-size: 16px;
+
+}
+/*div#galleryList 끝*/
+
+/*main#main 끝*/
+
+
